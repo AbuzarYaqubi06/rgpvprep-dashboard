@@ -15,6 +15,7 @@ export default function Signup() {
   function submit(e) {
     e.preventDefault();
     try {
+      // eslint-disable-next-line no-unused-vars
       const user = signup({ name, email, password, role });
       if (role === 'user') {
         setOk('Registered and logged in. Redirecting...');
