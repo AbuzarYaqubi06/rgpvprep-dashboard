@@ -1,0 +1,52 @@
+:root{
+  --primary: #2269a3;
+  --bg: #0b0b0b;
+  --card: #0f0f0f;
+  --muted: #bfbfbf;
+  --accent: #ffd166;
+  --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+body,html,#root{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+body{background:var(--bg); color:#fff; -webkit-font-smoothing:antialiased;}
+
+.nav{
+  display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:linear-gradient(180deg, rgba(34,105,163,0.16), transparent);
+  position:sticky;top:0;z-index:999;border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.brand{color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+.nav-right{display:flex;gap:12px;align-items:center}
+.nav-link{color:var(--muted);text-decoration:none}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:6px 10px;border-radius:8px;cursor:pointer}
+.primary{background:var(--primary);border:none;color:#fff;padding:8px 12px;border-radius:8px;cursor:pointer}
+.primary:hover{filter:brightness(1.05)}
+.center-card{max-width:900px;margin:40px auto;padding:24px;background:var(--card);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+
+.app-container{max-width:1100px;margin:28px auto;padding:0 16px;}
+
+/* Auth */
+.auth-card{max-width:420px;margin:18px auto;padding:22px;background:var(--card);border-radius:10px}
+.auth-card input, .auth-card select{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff}
+.auth-card .muted{color:var(--muted);font-size:13px}
+.error{color:#ff6b6b}
+.success{color:#6bffb8}
+
+/* Dashboard layout */
+.dashboard{background:transparent;padding:8px 0;border-radius:10px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+.filters input{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff}
+
+/* Notes list */
+.notes-list{margin-top:12px}
+.note-row{display:flex;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.note-row h4{margin:0;font-weight:600}
+.note-actions{display:flex;gap:8px;align-items:center}
+
+/* Upload form */
+.upload-card{max-width:760px;padding:12px;background:var(--card);border-radius:10px}
+.upload-card input{display:block;width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff}
+
+/* small utility */
+.muted{color:var(--muted)}
+.pending-row{display:flex;justify-content:space-between;align-items:center;padding:8px;border-bottom:1px solid rgba(255,255,255,0.03)}
